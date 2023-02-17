@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="maejorin" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4ae4ca8d-f46d-4939-9b57-080d0a38fdf5">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="numBureau" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="440" y="10" width="105" height="61" uuid="f8276e08-7f82-4416-a949-a7dff5abe483"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[المملكة المغربية
+ وزارة الداخلية
+ولاية جهة العيون الساقية الحمراء
+عمالة إقليم العيون]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="20" width="181" height="41" uuid="67ed382d-861d-4b2e-b4a8-6e13e052ce76"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19"/>
+				</textElement>
+				<text><![CDATA[المأجورين]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="7" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="214" splitType="Stretch">
+			<staticText>
+				<reportElement x="450" y="50" width="100" height="30" uuid="85888809-686e-4382-a708-b96377b47bbf"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[رقم مكتب التصويت]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="350" y="50" width="100" height="30" uuid="0d863c68-4978-4e11-ac74-45fce849c675"/>
+				<textFieldExpression><![CDATA[$F{numBureau}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
